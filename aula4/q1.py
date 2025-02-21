@@ -8,4 +8,4 @@ for i in range(3):
     
 os.system('cls')
 
-print(f"O maior número é: {max(vetor)}")
+print(f"O maior número é: {max(vetor)}") 
