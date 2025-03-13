@@ -1,18 +1,27 @@
 import customtkinter as ctk
+from tkinter import messagebox
 
-janela = ctk.CTk('light blue')
-janela.geometry('450x600')
+ctk.set_appearance_mode('dark')
+
+janela = ctk.CTk('dark blue')
+janela.geometry('600x450')
 janela.resizable(False,False)
 janela.title('App Consumo de Viagem')
+janela.iconbitmap('ic_local_gas_station_128_28461.ico')
 
-ctk.CTkLabel(janela,text='App Consumo Viagem',
+ctk.CTkLabel(janela, text='App Consumo Viagem',
              font=('Arial',30,'bold'),
-             text_color='dark blue').pack(pady=20)
+             text_color=('white').pack(pady=10))
 
-distancia = ctk.CTkEntry(janela,width=400,
+ctk.CTkLabel(janela, text='03/2025 - SENAI Bahia',
+             font=('Arial',30,'bold'),
+             text_color=('white').pack(pady=10))
+
+distancia = ctk.CTkEntry(janela, width=400,
                      height=40,
                      placeholder_text='Digite a distância percorrida',
-                     font=('arial',20))
+                     font=('arial',20)
+                     ).place(x=300,y=255)
 
 litros = ctk.CTkEntry(janela,width=400,
                      height=40,
