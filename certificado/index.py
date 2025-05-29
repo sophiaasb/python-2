@@ -20,7 +20,7 @@ for x in valores[1:]:
     doc.render({
         'nome':x[0],
         'curso':x[1],
-        'data':x[2],
+        'data':x[2].strftime('%d/%m%Y'),
         'instrutor':x[3]
     })
     
